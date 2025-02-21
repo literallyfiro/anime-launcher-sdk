@@ -45,7 +45,7 @@ fn replace_keywords(command: impl ToString, folders: &Folders) -> String {
 }
 
 /// Try to run the game
-/// 
+///
 /// This function will freeze thread it was called from while the game is running
 #[tracing::instrument(level = "info", ret)]
 pub fn run() -> anyhow::Result<()> {

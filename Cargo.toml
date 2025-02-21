@@ -8,11 +8,12 @@ repository = "https://github.com/an-anime-team/anime-launcher-sdk"
 edition = "2021"
 
 [dependencies.anime-game-core]
-git = "https://github.com/an-anime-team/anime-game-core"
-tag = "1.28.0"
+git = "https://github.com/literallyfiro/anime-game-core"
+branch = "main"
 features = ["all"]
 
 # path = "../anime-game-core" # ! for dev purposes only
+# features = ["all"]
 
 [dependencies]
 anyhow = { version = "1.0", features = ["backtrace"] }
@@ -39,7 +40,7 @@ wuwa = ["anime-game-core/wuwa"]
 star-rail-patch = ["anime-game-core/patch-jadeite"]
 honkai-patch = ["anime-game-core/patch-jadeite"]
 pgr-patch = ["anime-game-core/patch-mfc140"]
-wuwa-patch = ["anime-game-core/patch-vcrun2015"]
+wuwa-patch = ["anime-game-core/patch-jadeite"]
 
 # Common features
 states = []
